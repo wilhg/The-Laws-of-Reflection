@@ -1,4 +1,4 @@
-反射规则 - The Laws of Reflection
+Go语言反射规则 - The Laws of Reflection
 ======================
 
 原文地址：[http://blog.golang.org/laws-of-reflection](http://blog.golang.org/laws-of-reflection)
@@ -354,9 +354,9 @@ t is now {77 Sunset Strip}
 
 ##结论
 再次列出反射法则：
--反射从接口值到反射对象中
--反射从反射对象到接口值中
--要修改反射对象，值必须是“可设置”的
+*反射从接口值到反射对象中(Reflection goes from interface value to reflection object.)
+*反射从反射对象到接口值中(Reflection goes from reflection object to interface value.)
+*要修改反射对象，值必须是“可设置”的(To modify a reflection object, the value must be settable.)
 
 一旦你了解反射法则，Go就会变得更加得心应手（虽然它仍旧微妙）。这是一个强大的工具，除非在绝对必要的时候，我们应该谨慎并避免使用它。
 
