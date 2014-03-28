@@ -217,7 +217,7 @@ fmt.Printf("value is %7.1e\n", v.Interface())
 Reflection goes from interface values to reflection objects and back again.
 
 
-##反射规则（三） - 若要修改反射对象，值必须是可设置的。
+##反射规则（三） - 若要修改反射对象，值必须可设置
 
 第三条规则是最微妙同时也是最混乱的，但如果我们从它的基本原理开始，那么一切都不在话下。
 
@@ -354,9 +354,9 @@ t is now {77 Sunset Strip}
 
 ##结论
 再次列出反射法则：
-*反射从接口值到反射对象中(Reflection goes from interface value to reflection object.)
-*反射从反射对象到接口值中(Reflection goes from reflection object to interface value.)
-*要修改反射对象，值必须是“可设置”的(To modify a reflection object, the value must be settable.)
+* 反射从接口值到反射对象中(Reflection goes from interface value to reflection object.)
+* 反射从反射对象到接口值中(Reflection goes from reflection object to interface value.)
+* 要修改反射对象，值必须是“可设置”的(To modify a reflection object, the value must be settable.)
 
 一旦你了解反射法则，Go就会变得更加得心应手（虽然它仍旧微妙）。这是一个强大的工具，除非在绝对必要的时候，我们应该谨慎并避免使用它。
 
